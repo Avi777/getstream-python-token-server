@@ -22,8 +22,8 @@ To retrieve a token, hit the `/v1/token` endpoint with an HTTP `POST` with the f
 
 ```json
 {
-	"id": "NG5y5qtDdaX9q5f",
-	"name": "Peter Mbanugo"
+	"id": userID,
+	"name": userName
 }
 ```
 

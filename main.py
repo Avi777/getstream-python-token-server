@@ -17,8 +17,7 @@ from fastapi.security import HTTPBasic, HTTPBasicCredentials
 
 from stream_chat import StreamChat
 
-logging.config.fileConfig("logging.conf", disable_existing_loggers=False)
-
+logging.basicConfig(filename="requests.log", level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 

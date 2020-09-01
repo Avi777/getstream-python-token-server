@@ -57,6 +57,11 @@ class User(BaseModel):
     name: str
 
 
+@app.get("/ping")
+def pong():
+    return {"ping": "pong!"}
+
+
 @app.post("/v1/token")
 async def create_token(user: User, username: str = Depends(get_current_username)):
     STREAM_API_KEY = os.getenv("STREAM_API_KEY")
